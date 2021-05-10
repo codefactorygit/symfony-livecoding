@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TestController!{% endblock %}
+
+{% block body %}
+    {{ person["name"] }} <br>
+    {{ person.age }}
+    <hr>
+    {% for name in arrayOfNames %}
+        <p>{{ name }}</p>
+    {% endfor %}
+{% endblock %}
